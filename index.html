@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kless Mckain List</title>
+  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Martel+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
+</head>
+<body>
+  <header class='container'>
+    <div class='intro'>
+      <img class='shoppingCartImage' src="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fcdn1.iconfinder.com%2Fdata%2Ficons%2Ffinance-banking-and-currency-part-1%2F400%2Ffinance_10-512.png" alt="Picture of a shopping cart">
+      <h1>Shopping List</h1>
+      <h2>By: Kless Mckain</h2>
+      <p>Its time to make your shopping list<br> 
+        Enter each item in the textbbox below, then press add!</p>
+    </div>
+  </header>
+  
+<!--   this will the reset and check button -->
+  <div class='container'>
+    <form class='resetContainer'>
+      <button class='reset-list' type='submit'>Reset</button>
+      <button class='checked' type='submit'>Check</button>
+    </form>
+  </div>
+  
+<!--   this section will allow us to add grocery items -->
+  <div class='list-area-insertion container'>
+    <form>
+      <input type="text" class='shoppinglistitem' name='shoppinglistitem' placeholder='Enter each item and click add'>
+      <button type='submit' id='add' value='add'>Add</button>
+    </form>
+  </div>
+  
+<!--   Dynamically add list item goes in the div below -->
+  <div class='list'></div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</body>
+</html>
